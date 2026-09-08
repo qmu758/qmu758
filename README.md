@@ -17,25 +17,29 @@ Here are some ideas to get you started:
 
 # きゅーむ / qmu758
 
-業務や日常の手作業を、PythonやVBAで自動化することに関心があります。
+Pythonを中心に、日常やシステム運用で発生した課題を
+自動化・可視化・ツール化することに関心があります。
 
-特に、デジタル放送・録画サーバー・VPN・ファイル転送・監視など、
-実際の運用で発生した課題を解決するツールを開発しています。
+デジタル放送・録画サーバー・ネットワーク・監視などの趣味環境から、
+ブラウザで使える小規模なWebツールまで、
+「実際に欲しいもの・困ったこと」を起点に開発しています。
 
 ## Skills
 
 - Python
+- JavaScript / HTML / CSS
 - VBA
 - Git / GitHub
-- Windows
+- Windows / Linux
 - Tailscale / VPN
 - SMB
 - SQLite
 - Discord Webhook
-- タスクスケジューラ
+- Windows Task Scheduler
+- ネットワーク・サーバー運用
 - 業務改善・自動化
 
-## Projects
+## Featured Projects
 
 ### [Recording Mover](https://github.com/qmu758/recording_mover)
 
@@ -49,6 +53,18 @@ VPN経由のリモート録画サーバーから、自宅サーバーへ録画�
 - SQLiteによる履歴管理
 - 多重起動防止
 
+### [Virtual Broadcast System](https://github.com/qmu758/VirtualBroadcastSystem)
+
+OBS Studioの映像・音声からMPEG-2 TSを生成し、
+仮想BonDriver経由でTVTestから受信できる
+PC上の仮想デジタル放送システムです。
+
+物理的なRF出力やOFDM変調器を使用せず、
+PC内で自主放送環境を構築できます。
+
+> C++実装にはCodexを活用し、
+> システム構成・要件設計・動作検証を行っています。
+
 ### [Tailscale Monitor](https://github.com/qmu758/Tailscale-Monitor)
 
 Tailscale上の端末のオンライン・オフライン状態を監視し、
@@ -58,18 +74,47 @@ Discordへ通知するPythonツールです。
 - 重要ノードの即時通知
 - Windows / Linux対応
 
+### [CSV ↔ JSON Converter](https://qmu758.github.io/csv-json-converter/)
+
+CSVとJSONをブラウザ上で相互変換できるWebツールです。
+
+- CSV → JSON / JSON → CSV
+- カンマ・セミコロン・タブ区切り対応
+- 引用符・改行を含むCSVに対応
+- UTF-8ファイルの読み込み・ダウンロード
+- 外部サーバーへのデータ送信なし
+- GitHub Pagesで利用可能
+
+## Other Projects
+
+- **Windows Error Discord Notifier**  
+  Windowsのイベントログを監視し、異常終了などをDiscordへ通知
+
+- **Discord Disk Space Monitor**  
+  Windowsマシンのディスク空き容量を監視してDiscordへ通知
+
+- **Realtime Subtitle**  
+  PC上の外国語音声を文字起こし・翻訳し、日本語字幕として表示
+
+- **Japan DTV Channel Converter**  
+  地上デジタル放送の物理チャンネルと中心周波数を相互変換
+
+- **JP Phone Number Formatter**  
+  日本の電話番号を種類・地域に応じてハイフン区切りへ変換
+
 ## Interests
 
-- 業務自動化
-- 運用改善
-- インフラ・ネットワーク
-- SRE
-- デジタル放送・録画システム
+- Automation
+- Infrastructure / Networking
+- SRE / Operations
+- Digital Broadcasting
+- Recording Systems
+- Web Tools
 
-## Currently learning
+## Currently Learning
 
-- Pythonのテスト
+- Python Testing
 - CI/CD
 - Linux
-- クラウドインフラ
+- Cloud Infrastructure
 - Infrastructure as Code
